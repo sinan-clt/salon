@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+    <input type="number" name="fk_int_salon_id"><br>
+    <input type="number" name="fk_int_branch_id="><br>
+    <input type="number" name="fk_int_category_id"><br>
+
+    <input type="text" name="vchr_services_name"><br>
+    <input type="text" name="vchr_services_price"><br>
+    <input type="text" name="vchr_services_off_days"><br>
+    <input type="text" name="vchr_services_spec_time"><br>
+    <input type="text" name="vchr_services_duration"><br>
+    <input type="text" name="vchr_services_speciality"><br>
+    <input type="text" name="vchr_services_image"><br>
+    <input type="text" name="text_services_desc"><br>
+    <input type="text" name="text_services_special_instructions"><br>
+
+    <input type="number" name="int_services_view_count"><br>
+    <input type="number" name="int_services_status"><br>
+    
+    <input type="text" name="vchr_delete_status"><br>
+    <input type="text" name="vchr_last_modified_by"><br>
+    <input type="text" name="vchr_last_modified_time"><br>
+
+    <button>SAVE</button>
+
+    {{message}}
+
+    </form>
+</body>
+</html>
